@@ -1,0 +1,42 @@
+Java8 Tutorial
+* Default methods for interfaces
+** utilize the default keyword
+** this feature is also known as Extension Methods
+* Lambda expressions
+** functional interface
+*** functional interface must contain exactly one abstract method declaration
+*** it's free to add default methods to your functional interface.
+* Method and constructor references
+** Java 8 enables you to pass references of methods or constructors via the :: keyword
+* Lambda scopes
+** Accessing outer scope variables from lambda expressions is very similar to anonymous objects. You can access final variables from the local outer scope as well as instance fields and static variables.
+** Accessing local variables, implicitly final, read only
+** Accessing fields and static variables, read and write
+** Default methods cannot be accessed from within lambda expressions
+* Build-in functional interfaces
+** @FunctionalInterface
+** Predicate
+** Function
+** Supplier, no input
+** Consumer, no output
+** Comparator
+** Optional
+** Stream
+*** operations are either intermediate or terminal
+*** parallel or sequential
+*** can support collection, like list or set, but doesn't support map
+*** filter, sorted, forEach, map, match, count, reduce
+** Parallel Streams
+** Map
+*** putIfAbsent
+*** computeIfPresent
+*** getOrDefault
+*** merge, Merge either put the key/value into the map if no entry for the key exists, or the merging function will be called to change the existing value.
+* Date
+** Clock
+** ZoneId
+** LocalTime
+** LocalDate
+** LocalDateTime
+* Annotations
+** repeatable, Java 8 enables us to use multiple annotations of the same type by declaring the annotation @Repeatable.

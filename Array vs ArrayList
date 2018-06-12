@@ -1,0 +1,7 @@
+Array vs ArrayList
+Array
+* Simple fixed sized arrays that we create in Java, e.g. int arr[] = new int[10]
+ArrayList
+* ArrayList : Dynamic sized arrays in Java that implement List interface.
+
+Array can contain both primitive data types as well as objects of a class depending on the definition of the array. However, ArrayList only supports object entries, not the primitive data types.
